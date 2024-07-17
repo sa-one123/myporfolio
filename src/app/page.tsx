@@ -1,19 +1,21 @@
-import Header from "../components/Header";
-import About from "../components/About";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+// pages/index.tsx
+import React from 'react';
+import Head from 'next/head';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Footer from '../components/Footer';
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-gray-200 to-gray-300 min-h-screen">
+    <div className="mx-auto max-w-screen-xl bg-white px-5 font-sans text-black dark:text-white dark:bg-black xs:text-[16px] md:text-[18px]">
+      <Head>
+        <title>John Doe | Web developer</title>
+      </Head>
       <Header />
-      <main className="container mx-auto py-8 px-4">
-        <About />
-        <Projects />
-        <Contact />
-      </main>
+      <Main />
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;

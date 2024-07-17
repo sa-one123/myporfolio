@@ -2,7 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-body {
-  @apply font-sans bg-gray-100;
+
+/* styles/fonts.css */
+html.light {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+}
+
+html.dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+}
+
+.toggle-btn::before {
+  transform: translate(26px);
 }

@@ -1,34 +1,48 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+  darkMode: "class",
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          50: '#f0f9ff',
-          100: '#cfe7fe',
-          200: '#aed4fd',
-          300: '#7dbaf9',
-          400: '#4c90f4',
-          500: '#266bf1',
-          600: '#1e56d8',
-          700: '#1941b8',
-          800: '#143198',
-          900: '#0e227a',
-        },
-        secondary: '#ffed4a',
-        danger: '#e3342f',
-        success: '#38c172',
-        info: '#3490dc',
-        warning: '#f6993f',
-      },
+    screens: {
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+    colors: {
+      black: "#000",
+      white: "#fff",
+      orange: "#E06330",
+    },
+    fontFamily: {
+      mono: [
+        "Roboto Mono",
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "Monaco",
+        "Consolas",
+        "Liberation Mono",
+        "Courier New",
+        "monospace",
+      ],
+    },
+    fontSize: {
+      xs: ".75rem",
+      sm: ".875rem",
+      tiny: ".875rem",
+      base: "1rem",
+      lg: "1.125rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.875rem",
+      "4xl": "2.25rem",
+      "5xl": "3rem",
+    },
+    letterSpacing: {
+      wide: ".025em",
     },
   },
   plugins: [],

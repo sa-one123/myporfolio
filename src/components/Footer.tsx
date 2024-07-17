@@ -1,14 +1,12 @@
-const Footer = () => {
-    return (
-      <footer className="bg-gray-900 text-white text-center py-4">
-        <div className="container mx-auto">
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Code Sa-one. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
-  
+// components/Footer.tsx
+import React from 'react';
+
+const Footer: React.FC = () => {
+  return (
+    <footer data-testid="footer" className="p-6 text-center text-sm text-black dark:text-white">
+        <p className="text-sm">© {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default Footer;
